@@ -30,10 +30,12 @@ document.querySelector('.checkclass').addEventListener('click', function () {
     
         else if (userNumber > NumberToGuess){
             document.querySelector('.messageclass').textContent = 'Your guess is large.';
+            document.querySelector('.textboxclass').value = '';
             score--;
         }
         else {
             document.querySelector('.messageclass').textContent = 'Your guess is small.';
+            document.querySelector('.textboxclass').value = '';
             score--;
         }
         if (score > 0)
