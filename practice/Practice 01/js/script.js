@@ -54,6 +54,7 @@ document.querySelector('.checkclass').addEventListener('click', function () {
 document.querySelector('.againclass').addEventListener('click', function () {
     score = 20;
     NumberToGuess = Math.floor(Math.random() * 20 + 1);
+    document.querySelector('.textboxclass').value = '';
     document.querySelector('.messageclass').textContent = 'Guess the number!';
     document.querySelector('.scoreclass').textContent = 'Score: ' + score;
     document.querySelector('.numberclass').textContent = '?';
